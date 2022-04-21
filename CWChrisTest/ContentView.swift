@@ -63,12 +63,12 @@ struct ContentView: View {
                 
                 HStack() {
                     Spacer()
-                    ReusablePlayerText(
+                    reusablePlayerText(
                         name: "DEMMS",
                         points: "0"
                     )
                     Spacer()
-                    ReusablePlayerText(
+                    reusablePlayerText(
                         name: "CPU",
                         points: "0"
                     )
@@ -87,7 +87,7 @@ struct ContentView_Previews: PreviewProvider {
     }
 }
 
-func ReusablePlayerText(name: String, points: String) -> some View {
+func reusablePlayerText(name: String, points: String) -> some View {
     return VStack(alignment: .center) {
         Text(name)
             .fontWeight(.medium)
